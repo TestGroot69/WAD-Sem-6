@@ -1,0 +1,179 @@
+Praveen Gangwar@PRAVEEN-MSI MINGW64 /d/DOCS/Sem6/LP2/WAD
+$ git init
+Initialized empty Git repository in D:/DOCS/Sem6/LP2/WAD/.git/
+
+
+
+Praveen Gangwar@PRAVEEN-MSI MINGW64 /d/DOCS/Sem6/LP2/WAD (master)
+$ git remote add origin 'https://github.com/TestGroot69/Sem6.git'
+
+
+
+Praveen Gangwar@PRAVEEN-MSI MINGW64 /d/DOCS/Sem6/LP2/WAD (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Docker/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+
+
+Praveen Gangwar@PRAVEEN-MSI MINGW64 /d/DOCS/Sem6/LP2/WAD (master)
+$ git add .
+warning: in the working copy of 'Docker/package.json', LF will be replaced by CRLF the next time Git touches it
+
+
+
+Praveen Gangwar@PRAVEEN-MSI MINGW64 /d/DOCS/Sem6/LP2/WAD (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   Docker/Dockerfile
+        new file:   Docker/package.json
+
+
+
+
+Praveen Gangwar@PRAVEEN-MSI MINGW64 /d/DOCS/Sem6/LP2/WAD (master)
+$ git commit -m 'First Commit'
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'Praveen Gangwar@PRAVEEN-MSI.(none)')
+
+
+
+Praveen Gangwar@PRAVEEN-MSI MINGW64 /d/DOCS/Sem6/LP2/WAD (master)
+$ git config --global user.email "testgroot123@gmail.com"
+
+
+
+Praveen Gangwar@PRAVEEN-MSI MINGW64 /d/DOCS/Sem6/LP2/WAD (master)
+$ git config --global user.name "Praveen"
+
+
+
+Praveen Gangwar@PRAVEEN-MSI MINGW64 /d/DOCS/Sem6/LP2/WAD (master)
+$ git commit -m 'First Commit'
+[master (root-commit) e888c8d] First Commit
+ 2 files changed, 42 insertions(+)
+ create mode 100644 Docker/Dockerfile
+ create mode 100644 Docker/package.json
+
+
+
+Praveen Gangwar@PRAVEEN-MSI MINGW64 /d/DOCS/Sem6/LP2/WAD (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+
+
+Praveen Gangwar@PRAVEEN-MSI MINGW64 /d/DOCS/Sem6/LP2/WAD (master)
+$ git push origin master
+fatal: User cancelled dialog.
+error: unable to read askpass response from 'C:/Program Files/Git/mingw64/bin/git-askpass.exe'
+Username for 'https://github.com':
+
+
+
+Praveen Gangwar@PRAVEEN-MSI MINGW64 /d/DOCS/Sem6/LP2/WAD (master)
+$ ssh-keygen -t ed25519 -C "testgroot123@gmail.com"
+Generating public/private ed25519 key pair.
+Enter file in which to save the key (/c/Users/Praveen Gangwar/.ssh/id_ed25519):
+Created directory '/c/Users/Praveen Gangwar/.ssh'.
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /c/Users/Praveen Gangwar/.ssh/id_ed25519
+Your public key has been saved in /c/Users/Praveen Gangwar/.ssh/id_ed25519.pub
+The key fingerprint is:
+SHA256:VWEBHy/vp2072JpLs6UAxiWmp+FHbn4mGl08nyDNN+k testgroot123@gmail.com
+The key's randomart image is:
++--[ED25519 256]--+
+|          ..*o   |
+|           + o   |
+|         o..o .  |
+|        +.*  o.  |
+|       oSB B +.  |
+|      . O + *.o  |
+|       + = . E+..|
+|        =. oo.**.|
+|       ...+  *+o+|
++----[SHA256]-----+
+
+
+
+
+Praveen Gangwar@PRAVEEN-MSI MINGW64 /d/DOCS/Sem6/LP2/WAD (master)
+$ cat /c/Users/'Praveen Gangwar'/.ssh/id_ed25519.pub
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINkVAIKFFsoPoR+KCLsvdsh42/hQY9vwi9e/Sa+XPo5C testgroot123@gmail.com
+
+
+
+
+Praveen Gangwar@PRAVEEN-MSI MINGW64 /d/DOCS/Sem6/LP2/WAD (master)
+$ git pull --allow-unrelated-histories origin master
+From https://github.com/TestGroot69/WAD-Sem-6
+ * branch            master     -> FETCH_HEAD
+Merge made by the 'ort' strategy.
+
+
+
+PS D:\DOCS\Sem6\LP2\WAD> git rm --cached Docker
+rm 'Docker'
+
+
+
+PS D:\DOCS\Sem6\LP2\WAD> git commit -m "remove cached repo"
+[master 6a26fde] remove cached repo
+ 1 file changed, 1 deletion(-)
+ delete mode 160000 Docker
+
+
+
+
+PS D:\DOCS\Sem6\LP2\WAD> git add .
+warning: in the working copy of 'Docker/package.json', LF will be replaced by CRLF the next time Git touches it
+
+
+
+PS D:\DOCS\Sem6\LP2\WAD> git commit -m 'First Commit'
+[master 2afbe98] First Commit
+ 2 files changed, 44 insertions(+)
+ create mode 100644 Docker/Dockerfile
+ create mode 100644 Docker/package.json
+
+
+
+
+Praveen Gangwar@PRAVEEN-MSI MINGW64 /d/DOCS/Sem6/LP2/WAD (master)
+$ git push origin master
+info: please complete authentication in your browser...
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (5/5), 775 bytes | 775.00 KiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/TestGroot69/Sem6.git
+ * [new branch]      master -> master
+
+
